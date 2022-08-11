@@ -1,0 +1,346 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Apply Now</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.ico' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Yours Paralegal</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/" >Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/services">Popular Services</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li class="dropdown"><a href="/serviced#STO"><span>Business Startup Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="/serviced#STO">Sole Proprietorship Registration</a></li>
+                  <li><a href="/serviced#STO">Partnership Firm Registration</a></li>
+                  <li><a href="/serviced#STO">Limited Liability Partnership (LLP)</a></li>
+                  <li><a href="/serviced#STO">Private Limited Company Reg</a></li>
+                  <li><a href="/serviced#STO">One Person Company</a></li>
+                  <li><a href="/serviced#STO">Society Registration</a></li>
+                  <li><a href="/serviced#STO">Trust Registration</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/serviced#CAR"><span>Registration and License</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="/serviced#CAR">FOOD Licence</a></li>
+                  <li><a href="/serviced#CAR">MSME Udyog Aadhar Registration</a></li>
+                  <li><a href="/serviced#CAR">Shop and Establishment</a></li>
+                  <li><a href="/serviced#CAR">RERA Registration</a></li>
+                  <li><a href="/serviced#CAR">ISI mark Registration</a></li>
+                  <li><a href="/serviced#CAR">ISO mark certification</a></li>
+                  <li><a href="/serviced#CAR">Employee Provident Fund Reg</a></li>
+                  <li><a href="/serviced#CAR">ESI Registration (ESIC)</a></li>
+                  <li><a href="/serviced#CAR">Startup Initiative India Reg</a></li>
+                  <li><a href="/serviced#CAR">Digital Signature Certificate (DSC)</a></li>
+                  <li><a href="/serviced#CAR">Contrat Labour Licence</a></li>
+                  <li><a href="/serviced#CAR">Pollution Control Board NOC</a></li>
+
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/serviced#LOG"><span>GST and Income Tax </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="/serviced#LOG">GST Registration</a></li>
+                  <li><a href="/serviced#LOG">IT Returns Filing</a></li>
+                  <li><a href="/serviced#LOG">TDS</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/serviced#TRU"><span>IT Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="/serviced#TRU">Website development</a></li>
+                  <li><a href="/serviced#TRU">App development</a></li>
+                  <li><a href="/serviced#TRU">Digital marketing</a></li>
+                  <li><a href="/serviced#TRU">Social Media Marketing</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/serviced#PAC"><span>Designing</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="/serviced#PAC">Logo Design</a></li>
+                  <li><a href="/serviced#PAC">Digital Visiting Cards</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/serviced#WAR"><span>IPR Service </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="/serviced#WAR">Trademark</a></li>
+                  <li><a href="/serviced#WAR">Patent</a></li>
+                  <li><a href="/serviced#WAR">Copyright</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a class="get-a-quote" href="/quote">Apply Now</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('/static/assets/img/page-header.jpg');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Get a Quote</h2>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Get a Quote</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Get a Quote Section ======= -->
+    {% block content %}
+
+    <form action="" method="post">
+    {% csrf_token %}
+        
+        <div class="container">
+            <div class="patient-form ">
+              <style>input[type=text] {
+                padding: 0;
+                height: 30px;
+                position: relative;
+                left: 0;
+                outline: none;
+                border: 1px solid #cdcdcd;
+                border-color: rgba(0, 0, 0, .15);
+                background-color: white;
+                font-size: 16px;
+              }
+              </style>
+              
+                <div class="row">
+                    <div class="form-field col-md-6" style="padding-bottom: 40px; padding-top: 100px;">
+                        <input type="text" id="name" class="form-control input-text mb-0 p-0" style="text-indent: 10px; outline:none" type="text" name="name" placeholder="Name">
+                    </div>
+
+                    <div class="form-field col-md-6" style="padding-bottom: 40px; padding-top: 100px;">
+                        <input type="text" id="email"  class="form-control input-text mb-0 p-0" style="text-indent: 10px; outline:none" type="text" name="email" placeholder="Email">
+                    </div>
+
+                    <div class="form-field col-md-6" style="padding-bottom: 40px;">
+                        <input type="text" id="phone" class="form-control input-text mb-0 p-0" style="text-indent: 10px; outline:none" type="text" name="phone" placeholder="Phone">
+                    </div>
+
+                    <div class="form-field col-md-6" style="padding-bottom: 40px;">
+                      <input type="text" id="service" class="form-control input-text " style="text-indent: 10px; outline:none" type="text" name="service" placeholder="Service Name Eg : GST , IT , TAX Etc.">
+                    </div>
+
+                    <div class="form-field col-md-12" style="padding-bottom: 50px;">
+                        <input type="text" id="massege" class="form-control input-text mb-0 p-0 " style="text-indent: 10px; outline:none" type="text" name="massege" placeholder="Massege">
+                    </div>
+
+                    <div class="form-field col-md-6" style="padding-bottom: 40px; ">
+                      <input type="text" id="city" class="form-control input-text " style="text-indent: 10px; outline:none" type="text" name="city" placeholder="City">
+                    </div>
+                    
+                    <div class="form-field col-md-4" style="padding-bottom: 40px; ">
+                      <select name="state" id="state" class="form-control">
+                        <option value="">Select State </option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                        </select>
+                  </div>
+                </div>
+
+
+            </div>  
+
+
+                <!-- </div> -->
+            </div>
+            </div>
+            
+        </div>
+
+        </div>
+        </div>
+    </div>
+        <button class="btn col-lg-4 btn-block  btn-info " type="submit" style="background: #2756ff; color: aliceblue; margin-left: 400px; margin-right: 400px; margin-bottom: 100px;" >Apply</button>
+    </form>
+{% endblock content %}
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="" class="logo d-flex align-items-center">
+            <span>Yours Paralegal</span>
+          </a>
+          <p>Yours paralegal is India's fastest growing "Legal Service Provider Company" attempting to provide best legal solutions and deliver services to your doorstep. 
+            We provide all the services under one roof to help you to register & manage your business anywhere in India with legal compliance.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.facebook.com/yours.paralegal/" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/yours.paralegal?igshid=YmMyMTA2M2Y=" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/yours-paralegal-services/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/quote">Apply Now</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="/serviced#STO">Business Startup Service</a></li>
+            <li><a href="/serviced#LOG">GST and Income Tax</a></li>
+            <li><a href="/serviced#CAR">Registration and License</a></li>
+            <li><a href="/serviced#TRU">IT Services</a></li>
+            <li><a href="/serviced#PAC">Designing</a></li>
+            <li><a href="/serviced#WAR">IPR Service</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            Yours Paralegal <br>
+            Office no 03, YPS , Bhiwandi, Thane- 421302<br>
+            Maharashtra , India <br><br>
+            <strong>Phone:</strong> +91 8369725134<br>
+            <strong>Email:</strong> yours.paralegal@gmail.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Yours Paralegal</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
+        Designed by <a href="https://yoursparalegal.com/">Yorsparalegal</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,436 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Yours Paralegal</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.ico' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Yours Paralegal</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="services">Popular Services</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li class="dropdown"><a href="serviced#STO"><span>Business Startup Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="serviced#STO">Sole Proprietorship Registration</a></li>
+                  <li><a href="serviced#STO">Partnership Firm Registration</a></li>
+                  <li><a href="serviced#STO">Limited Liability Partnership (LLP)</a></li>
+                  <li><a href="serviced#STO">Private Limited Company Reg</a></li>
+                  <li><a href="serviced#STO">One Person Company</a></li>
+                  <li><a href="serviced#STO">Society Registration</a></li>
+                  <li><a href="serviced#STO">Trust Registration</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="serviced#CAR"><span>Registration and License</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="serviced#CAR">FOOD Licence</a></li>
+                  <li><a href="serviced#CAR">MSME Udyog Aadhar Registration</a></li>
+                  <li><a href="serviced#CAR">Shop and Establishment</a></li>
+                  <li><a href="serviced#CAR">RERA Registration</a></li>
+                  <li><a href="serviced#CAR">ISI mark Registration</a></li>
+                  <li><a href="serviced#CAR">ISO mark certification</a></li>
+                  <li><a href="serviced#CAR">Employee Provident Fund Reg</a></li>
+                  <li><a href="serviced#CAR">ESI Registration (ESIC)</a></li>
+                  <li><a href="serviced#CAR">Startup Initiative India Reg</a></li>
+                  <li><a href="serviced#CAR">Digital Signature Certificate (DSC)</a></li>
+                  <li><a href="serviced#CAR">Contrat Labour Licence</a></li>
+                  <li><a href="serviced#CAR">Pollution Control Board NOC</a></li>
+
+                </ul>
+              </li>
+              <li class="dropdown"><a href="serviced#LOG"><span>GST and Income Tax </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="serviced#LOG">GST Registration</a></li>
+                  <li><a href="serviced#LOG">IT Returns Filing</a></li>
+                  <li><a href="serviced#LOG">TDS</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="serviced#TRU"><span>IT Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="serviced#TRU">Website development</a></li>
+                  <li><a href="serviced#TRU">App development</a></li>
+                  <li><a href="serviced#TRU">Digital marketing</a></li>
+                  <li><a href="serviced#TRU">Social Media Marketing</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="serviced#PAC"><span>Designing</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="serviced#PAC">Logo Design</a></li>
+                  <li><a href="serviced#PAC">Digital Visiting Cards</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="serviced#WAR"><span>IPR Service </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="serviced#WAR">Trademark</a></li>
+                  <li><a href="serviced#WAR">Patent</a></li>
+                  <li><a href="serviced#WAR">Copyright</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contact">Contact</a></li>
+          <li><a class="get-a-quote" href="quote">Apply Now</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row gy-4 d-flex justify-content-between">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h2 data-aos="fade-up">WELCOME TO 'YOURS PARALEGAL' GET ALL THE SERVICES AT ONE PLATFORM.</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Yours paralegal is India's fastest growing "Legal Service Provider Company" attempting to provide best legal solutions and deliver services to your doorstep. 
+            We provide all the services under one roof to help you to register & manage your business anywhere in India with legal compliance.</p>
+
+        </div>
+
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+          <img src="{% static 'assets/img/yps2.png' %}" class="img-fluid  mb-3 mb-lg-0" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+   
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about pt-70">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+          <div class=" col-lg-6 position-relative align-self-start order-lg-last order-first">
+            <img src="{% static 'assets/img/services.png' %}" class=" img-fluid" alt="" style="margin-top: 100px; ">
+          </div>
+          <div class="col-lg-6 content order-last  order-lg-first">
+            <h3>About Us</h3>
+            <p>
+              Yours paralegal is India's fastest growing "Legal Service Provider Company" attempting to provide best legal solutions and deliver services to your doorstep.
+
+We provide all the services under one roof to help you to register & manage your business anywhere in India with legal compliance. 
+
+            </p>
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-broadcast"></i>
+                <div>
+                  <h5>Aim</h5>
+                  <p>Our aim is to brought service users and professional service providers together at online platform via technology and reduce the cost via automation which save the time to deliver services at your doorstep</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bi  bi-fullscreen-exit"></i>
+                <div>
+                  <h5>Vision & Mission</h5>
+                  <p>Our company’s vision is to make a legal tech driven platform & mission is to solve the client’s issue smoothly, so that trust is built between our clients and us. We assure our clients with the best services with a good quality excellence. </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="service" class="services pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>Our Services</span>
+          <h2>Our Services</h2>
+
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/serve1.png' %}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="serviced#STO" class="stretched-link">Business Startup Services :</a></h3>
+              <p></p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/serve2.jpg' %}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="servicedLOG" class="stretched-link">GST and Income Tax :</a></h3>
+              <p></p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/serve3.png' %}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="serviced#CAR" class="stretched-link">Registration and License :</a></h3>
+              <p></p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/serve4.jpg' %}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="serviced#TRU" class="stretched-link">IT Services :</a></h3>
+              <p></p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/serve5.jpg' %}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="serviced#PAC" class="stretched-link">Designing :</a></h3>
+              <p></p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/serve6.png' %}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="serviced#WAR" class="stretched-link"> IPR Service :</a></h3>
+              <p></p>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+
+          <div class="col-md-5">
+            <img src="{% static 'assets/img/food.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7">
+            <a href="quote"><h3>FSSAI LICENSE/REGISTRATION Or FOOD LICENSE</h3></a>
+            
+            <p class="fst-italic">
+              FSSAI is required for all entities who have been involved in the food business whether food manufacture, packaging, distributing or selling. The Registration and Licence serves as proof and authorisation for any food related business to operate as a legal food business entity.  Food Safety and Standards Authority of India (FSSAI),
+               an institution that monitors food businesses under the guidelines and regulations listed in the FSSAI Act 2000.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i> Turnover upto 12 lakhs - only registration is required.
+                
+                </li>
+              <li><i class="bi bi-check"></i> Turnover above 12 lakhs to 20 crore - State Licence
+                
+                </li>
+              <li><i class="bi bi-check"></i>Turnover above 20 crore - Central Licence.
+              
+                </li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="{% static 'assets/img/taxes.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1">
+            <a href="quote"><h3>GST REGISTRATION (GOODS AND SERVICES TAX)</h3></a>
+            
+            <p class="fst-italic">
+              Goods and Services Tax is an indirect tax which is levied at all stages from manufacturing to consumption. It applies to all service providers, traders, manufacturers and consumers. Every business shall have to register under GST if its turnover exceeds from 20 lakhs in a financial year. 40 lakhs in special category and compulsory for E-Commerce entity to obtain GST irrespective of their turnover.  
+
+            </p>
+            <p>
+               Apply here for GST registration through Yours Paralegal 
+            </p>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="{% static 'assets/img/company.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7">
+            <a href="quote"><h3>COMPANY REGISTRATION</h3></a>
+            <p>A Company is a business entity recognised by the law as legal person or legal entity. Choose a type of company you want to register it will have an impant on your business </p>
+            <ul>
+              <li><i class="bi bi-check"></i> Private Limited or Public Limited Company.</li>
+              <li><i class="bi bi-check"></i> Partnership or Limited Liability Partnership.</li>
+              <li><i class="bi bi-check"></i>  One Person Company or Sole Proprietorship.
+              </li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="{% static 'assets/img/trademark.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1">
+            <a href="quote"><h3>TRADEMARK REGISTRATION</h3></a>
+            <p class="fst-italic">
+              Protect your brand identity and customer trust, a trademark is a unique identity that make your company product and service unique from the rest. A registered trademark is your business’s intellectual property/ intangible asset which protects the investment made into creating trust and loyalty among your customers.
+
+            </p>
+            <p>
+              
+            </p>
+          </div>
+        </div><!-- Features Item -->
+
+      </div>
+    </section><!-- End Features Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="" class="logo d-flex align-items-center">
+            <span>Yours Paralegal</span>
+          </a>
+          <p>Yours paralegal is India's fastest growing "Legal Service Provider Company" attempting to provide best legal solutions and deliver services to your doorstep. 
+            We provide all the services under one roof to help you to register & manage your business anywhere in India with legal compliance.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.facebook.com/yours.paralegal/" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/yours.paralegal?igshid=YmMyMTA2M2Y=" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/yours-paralegal-services/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="about">About us</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="quote">Apply Now</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="serviced#STO">Business Startup Service</a></li>
+            <li><a href="serviced#LOG">GST and Income Tax</a></li>
+            <li><a href="serviced#CAR">Registration and License</a></li>
+            <li><a href="serviced#TRU">IT Services</a></li>
+            <li><a href="serviced#PAC">Designing</a></li>
+            <li><a href="serviced#WAR">IPR Service</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            Yours Paralegal <br>
+            Office no 03, YPS , Bhiwandi, Thane- 421302<br>
+            Maharashtra , India <br><br>
+            <strong>Phone:</strong> +91 8369725134<br>
+            <strong>Email:</strong> yours.paralegal@gmail.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Yours Paralegal</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
+        Designed by <a href="https://yoursparalegal.com/">Yorsparalegal</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

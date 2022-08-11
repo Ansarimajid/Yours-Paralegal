@@ -1,0 +1,1034 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Service Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.ico' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Yours Paralegal</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/" >Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/services">Popular Services</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li class="dropdown"><a href="/serviced#STO"><span>Business Startup Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="/serviced#STO">Sole Proprietorship Registration</a></li>
+                  <li><a href="/serviced#STO">Partnership Firm Registration</a></li>
+                  <li><a href="/serviced#STO">Limited Liability Partnership (LLP)</a></li>
+                  <li><a href="/serviced#STO">Private Limited Company Reg</a></li>
+                  <li><a href="/serviced#STO">One Person Company</a></li>
+                  <li><a href="/serviced#STO">Society Registration</a></li>
+                  <li><a href="/serviced#STO">Trust Registration</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/serviced#CAR"><span>Registration and License</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="/serviced#CAR">FOOD Licence</a></li>
+                  <li><a href="/serviced#CAR">MSME Udyog Aadhar Registration</a></li>
+                  <li><a href="/serviced#CAR">Shop and Establishment</a></li>
+                  <li><a href="/serviced#CAR">RERA Registration</a></li>
+                  <li><a href="/serviced#CAR">ISI mark Registration</a></li>
+                  <li><a href="/serviced#CAR">ISO mark certification</a></li>
+                  <li><a href="/serviced#CAR">Employee Provident Fund Reg</a></li>
+                  <li><a href="/serviced#CAR">ESI Registration (ESIC)</a></li>
+                  <li><a href="/serviced#CAR">Startup Initiative India Reg</a></li>
+                  <li><a href="/serviced#CAR">Digital Signature Certificate (DSC)</a></li>
+                  <li><a href="/serviced#CAR">Contrat Labour Licence</a></li>
+                  <li><a href="/serviced#CAR">Pollution Control Board NOC</a></li>
+
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/serviced#LOG"><span>GST and Income Tax </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="/serviced#LOG">GST Registration</a></li>
+                  <li><a href="/serviced#LOG">IT Returns Filing</a></li>
+                  <li><a href="/serviced#LOG">TDS</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/serviced#TRU"><span>IT Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="/serviced#TRU">Website development</a></li>
+                  <li><a href="/serviced#TRU">App development</a></li>
+                  <li><a href="/serviced#TRU">Digital marketing</a></li>
+                  <li><a href="/serviced#TRU">Social Media Marketing</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/serviced#PAC"><span>Designing</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="/serviced#PAC">Logo Design</a></li>
+                  <li><a href="/serviced#PAC">Digital Visiting Cards</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/serviced#WAR"><span>IPR Service </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="/serviced#WAR">Trademark</a></li>
+                  <li><a href="/serviced#WAR">Patent</a></li>
+                  <li><a href="/serviced#WAR">Copyright</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a class="get-a-quote" href="/quote">Apply Now</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('/static/assets/img/page-header.jpg');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Service Details</h2>
+              <p>Get all services under one roof from your comfort zone.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Service Details</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- =======STO Service Details Section ======= -->
+    <div id="STO" class="service-details">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+
+          <div class="col-lg-4"  style="padding-top: 80px;">
+            <div class="services-list" >
+              <a href="#STO" class="active">Business Startup Services:</a>
+              <a href="#LOG">GST and Income Tax :</a>
+              <a href="#CAR">Registration and License.</a>
+              <a href="#TRU">IT Services</a>
+              <a href="#PAC">Designing</a>
+              <a href="#WAR"> IPR Service :</a>
+            </div>
+
+            <h4>Business Startup Services:</h4>
+            <p></p>
+          </div>
+
+          <div class="col-lg-8">
+          <ul>
+
+                  <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="sev" class="sev">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>Business Startup Services</span>
+          <h2>Business Startup Services</h2>
+
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-12">
+
+            <div class="accordion accordion-flush" id="faqlist">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <i class="bi bi-check-circle question-icon"></i>
+                    Sole Proprietorship Registration
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    A sole proprietorship, also known as an individual entrepreneurship, is a type of enterprise owned and run by one person. A sole proprietorship is the simplest and most common structure chosen to start a business. In this form of business the proprietor is solely and wholly responsible for his/her act and liability is unlimited. Yours Paralegal has expert professionals with experience who offer and provide full assistance and help you in Sole Proprietorship Registration.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <i class="bi bi-check-circle question-icon"></i>
+                    Partnership Firm Registration
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    A partnership firm is a business structure in which two or more individuals manage and operate a business in accordance with the terms and conditions set out in Partnership deed. Partnership deed required to establish partnership firm. Yours Paralegal has expert professionals with experience who offer and provide full assistance and help you in registration of Partnership Firm.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    <i class="bi bi-check-circle question-icon"></i>
+                    Limited Liability Partnership (LLP)
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    A limited liability partnership is a partnership in which some or all partners have limited liabilities. LLP is a preferable form of organization as it provides benefits of both the private limited and partnership firm. It is governed by the Limited Liability Partnership Act, 2008. Yours Paralegal has expert professionals with experience who offer and provide full assistance and help you to registered as Limited Liability Partnership (LLP)
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    <i class="bi bi-check-circle question-icon"></i>
+                    Private Limited Company Registration
+                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Private Limited Company is one of the most popular way to start a business. A private limited company is a privately held business entity held by private stakeholders. The liability arrangement is that of a limited partnership, wherein the liability of a shareholder extends only up to the number of shares held by them. A Company is an artificial person created by law. Yours Paralegal has expert professionals with experience who offer and provide full assistance and help you in registration of Private Limited Company.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    <i class="bi bi-check-circle question-icon"></i>
+                    One Person Company
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    One Person Company (OPC) is a company incorporated by a single person.The biggest advantages of starting a One Person Company are that only one person is required to start the business. It motivates the small traders and entrepreneurs who have the potential to start their own business and build up their own identity. Yours Paralegal has expert professionals with experience who offer and provide full assistance and help you in registration of One Person Company.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-6">
+                    <i class="bi bi-check-circle question-icon"></i>
+                    Society Registration
+                  </button>
+                </h3>
+                <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    A Society is an organisation in which a group of individuals come together with similar interests to perform several functions. The said societies are governed by the Society Registration Act, 1860 and said act is amended several times. The societies are formed to maintain residential or commercial complexes or to create the apartment association. Yours Paralegal has expert professionals with experience who offer and provide full assistance and help you in Society Registration. .
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-7">
+                    <i class="bi bi-check-circle question-icon"></i>
+                    Trust Registration
+                  </button>
+                </h3>
+                <div id="faq-content-7" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Trust is one of the most convenient ways to start a Non-Governmental Organization or NGO. It functions on the objective of charity or with other issues of public welfare. Trusts are regulated by the Indian Trust Act,1882. Yours Paralegal has expert professionals with experience who offer and provide full assistance and help you in registration of Trusts.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </ul>
+          
+          </div>
+
+        </div>
+
+      </div>
+    </section><!--STO End Service Details Section -->
+
+    <!-- =======LOG Service Details Section ======= -->
+    <section id="LOG" class="service-details">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="services-list">
+              <a href="#STO">Business Startup Services:</a>
+              <a href="#LOG"  class="active">GST and Income Tax :</a>
+              <a href="#CAR">Registration and License.</a>
+              <a href="#TRU">IT Services</a>
+              <a href="#PAC">Designing</a>
+              <a href="#WAR"> IPR Service :</a>
+            </div>
+
+            <h4>GST and Income Tax :</h4>
+            <p></p>
+          </div>
+
+          <div class="col-lg-8">
+            <ul>
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <div id="sev" class="sev">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>GST and Income Tax</span>
+          <h2>GST and Income Tax</h2>
+
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-10">
+
+            <div class="accordion accordion-flush" id="faqlist">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <i class="bi bi-check-circle question-icon"></i>
+                    GST Registration
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Goods and Services Tax is an indirect tax which is levied at all stages from manufacturing to consumption. It applies to all service providers, traders, manufacturers and consumers. Every business shall have to register under GST if its turnover exceeds from 20 lakhs in a financial year.
+GST Returns Filing
+GST Returns Filing
+GST Cancellation
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <i class="bi bi-check-circle question-icon"></i>
+                    IT Returns Filing
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Income Tax Return (ITR) is a form which a person is supposed to submit to the Income Tax Department of India. It contains information about the person's income and the taxes to be paid on it during the year. Individuals whose taxable income exceeds the maximum amount not chargeable to tax are eligible for income tax return. Your Paralegal team have experienced professionals who have an expertise to provide cost effective and timely filing of Income Tax Returns.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    <i class="bi bi-check-circle question-icon"></i>
+                    TDS Returns Filing
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                   TDS or Tax Deducted at Source is a specific amount that is reduced when a certain payment like salary, commission, rent, interest, professional fees, etc. is made. An assessee can submit an e-TDS return if the same was deducted from their income and it is the obligation of the assessee to file TDS Return within a due date or be liable to pay penalty for delay. 
+                   File your TDS return by our trustworthy experts.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!--LOG End Service Details Section -->
+
+ <!-- =======CAR Service Details Section ======= -->
+ <section id="CAR" class="service-details">
+  <div class="container" data-aos="fade-up">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4">
+        <div class="services-list">
+          <a href="#STO">Business Startup Services:</a>
+          <a href="#LOG">GST and Income Tax :</a>
+          <a href="#CAR"  class="active">Registration and License.</a>
+          <a href="#TRU">IT Services</a>
+          <a href="#PAC">Designing</a>
+          <a href="#WAR"> IPR Service :</a>
+        </div>
+
+        <h4>Registration and License.</h4>
+        <p></p>
+      </div>
+
+      <div class="col-lg-8">
+        <ul>
+
+        <div id="sev" class="sev">
+          <div class="container" data-aos="fade-up">
+    
+            <div class="section-header">
+              <span>Registration and License</span>
+              <h2>Registration and License</h2>
+    
+            </div>
+    
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-12">
+    
+                <div class="accordion accordion-flush" id="faqlist">
+    
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                        <i class="bi bi-check-circle question-icon"></i>
+                        FOOD Licence
+                      </button>
+                    </h3>
+                    <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                      <div class="accordion-body">
+                        Food Licence FSSAI (Licence & Registration) FSSAI is required for all entities who have been involved in the food business whether food manufacture, packaging,
+                         distributing or selling. The Registration and Licence serves as proof and authorisation for any food related business to operate as a legal food business entity. Food Safety and Standards Authority of India (FSSAI), an institution that monitors food businesses under the guidelines and regulations listed in the FSSAI Act 2000.
+                      </div>
+                    </div>
+                  </div><!-- # Faq item-->
+    
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                        <i class="bi bi-check-circle question-icon"></i>
+                        MSME Udyog Aadhar Registration
+                      </button>
+                    </h3>
+                    <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                      <div class="accordion-body">
+                        MSME stands for Micro, Small, and Medium Enterprises. It was introduced by the Government of India MSME registration is a mandatory process for any business to legally start and operate in India.
+                         The government of India has launched many schemes to help small and medium scale businesses to sustain and grow. To avail all these beneficial schemes, you need to get registered under MSME.
+                      </div>
+                    </div>
+                  </div><!-- # Faq item-->
+    
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                        <i class="bi bi-check-circle question-icon"></i>
+                        Shop and Establishment
+                      </button>
+                    </h3>
+                    <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                      <div class="accordion-body">
+                        All the shops and commercial establishments should register their business or organisation under the Shop and Establishment Act of their respective state. in accordance to the Labour Laws it is a mandatory licence to operate shops and commercial establishments.
+                      </div>
+                    </div>
+                  </div><!-- # Faq item-->
+    
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                        <i class="bi bi-check-circle question-icon"></i>
+                        RERA Registration
+                      </button>
+                    </h3>
+                    <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                      <div class="accordion-body">
+                        RERA stands for Real Estate Regulatory Authority came into existence as per the Real Estate (Regulation and Development) Act, 2016 which aims to protect the home buyers or purchasers and also boosts the real estate investments. It is mandatory for real estate developers to get all approval from various government agencies and disclose all the information on their respective state’s RERA regulatory authority
+                      </div>
+                    </div>
+                  </div><!-- # Faq item-->
+
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                        <i class="bi bi-check-circle question-icon"></i>
+                        ISI mark Registration
+                      </button>
+                    </h3>
+                    <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                      <div class="accordion-body">
+                        IISI or Indian Standard Institute Registration is mandatory for the manufacturer of products or goods. A product having ISI ensures that the product is safe to use. The mark gives assurance to the customer that the product is of good quality.through getting ISI certification on products
+                      </div>
+                    </div>
+                  </div><!-- # Faq item-->
+    
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-6">
+                        <i class="bi bi-check-circle question-icon"></i>
+                        ISO mark certification
+                      </button>
+                    </h3>
+                    <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                      <div class="accordion-body">
+                        The International Organisation for Standardisation  (ISO) international independent non-governmental standard setting organisation. ISO Certification can help in credibility and confidence in potential customer by ensuring them that your services and product meet the International Standard prescribed by ISO. 
+                      </div>
+                    </div>
+                  </div><!-- # Faq item-->
+    
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-7">
+                        <i class="bi bi-check-circle question-icon"></i>
+                        Employee Provident Fund Registration (EPFO)
+                      </button>
+                    </h3>
+                    <div id="faq-content-7" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                      <div class="accordion-body">
+                        Employees’ Provident Fund is a social security scheme that helps employees to save a small portion of their salary for future benefits. It was introduced through The Employee Provident Funds Act, 1952 to provide significant social security benefits for the employees. According to the provision of the act, registration under EPFO is applicable to every factory establishment which is engage in any industry specified in schedule I and in which 20 or more person are employed.
+                      </div>
+                    </div>
+                  </div><!-- # Faq item-->
+    
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-8">
+                        <i class="bi bi-check-circle question-icon"></i>
+                        ESI Registration (ESIC)
+                      </button>
+                    </h3>
+                    <div id="faq-content-8" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                      <div class="accordion-body">
+                        Employee State Insurance or ESI is a scheme provided by the Government of India under jurisdiction of the Ministry of Labour and Employment to offer medical, monetary and other social security advantages to workers.
+
+                      </div>
+                    </div>
+                  </div><!-- # Faq item-->
+
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-9">
+                        <i class="bi bi-check-circle question-icon"></i>
+                        Startup Initiative India Registration
+                      </button>
+                    </h3>
+                    <div id="faq-content-9" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                      <div class="accordion-body">
+                        The Startup India Scheme is managed by the Department of Industrial Policy and Promotion (DPIIT). Register your business under Startup India and avai beneficial scheme of Government.
+                      </div>
+                    </div>
+                  </div><!-- # Faq item-->
+    
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-10">
+                        <i class="bi bi-check-circle question-icon"></i>
+                        Digital Signature Certificate (DSC)
+                      </button>
+                    </h3>
+                    <div id="faq-content-10" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                      <div class="accordion-body">
+                        A Digital Signature is a secure key (USB E-Token) that contains the signature in digital format and is issued for the purpose of validating & verifying a particular person or entity. A digital signature certificate (DSC) includes information such as the user's name, pin code, country, email address, certificate issuance date, and certifying authority's name.
+                      </div>
+                    </div>
+                  </div><!-- # Faq item-->
+    
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-11">
+                        <i class="bi bi-check-circle question-icon"></i>
+                        Contrat Labour Licence
+                      </button>
+                    </h3>
+                    <div id="faq-content-11" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                      <div class="accordion-body">
+                        Any contractor or establishment engaging 20 or more contract workers during any day of the accounting year is necessary to obtain contract labour license when the Contract labour Act, 1970 is applicable on such contractors or establishment. 
+                      </div>
+                    </div>
+                  </div><!-- # Faq item-->
+    
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-12">
+                        <i class="bi bi-check-circle question-icon"></i>
+                        Pollution Control Board NOC
+                      </button>
+                    </h3>
+                    <div id="faq-content-12" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                      <div class="accordion-body">
+                        Under the existing pollution Control Laws, all types of industrial units, before establishing, are required to obtain consent to establish (No Objection Certificate). Pollution NOC certificate is issued by central pollution control board. Pollution NOC certificate is a consent provided by various government under Water (Pollution & Control of Pollution) Act, 1974 and Air (Pollution & Control of Pollution) Act, 1981.
+                      </div>
+                    </div>
+                  </div><!-- # Faq item-->
+    
+    
+    
+    
+    
+                </div>
+    
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section><!--CAR End Service Details Section -->
+
+ <!-- =======TRU Service Details Section ======= -->
+ <section id="TRU" class="service-details">
+  <div class="container" data-aos="fade-up">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4">
+        <div class="services-list">
+          <a href="#STO">Business Startup Services:</a>
+          <a href="#LOG">GST and Income Tax :</a>
+          <a href="#CAR">Registration and License.</a>
+          <a href="#TRU" class="active">IT Services</a>
+          <a href="#PAC">Designing</a>
+          <a href="#WAR"> IPR Service :</a>
+        </div>
+
+        <h4>IT Services</h4>
+        <p></p>
+      </div>
+
+      <div class="col-lg-8">
+
+        <ul>
+          <div id="sev" class="sev">
+            <div class="container" data-aos="fade-up">
+      
+              <div class="section-header">
+                <span>IT Services</span>
+                <h2>IT Services</h2>
+      
+              </div>
+      
+              <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-12">
+      
+                  <div class="accordion accordion-flush" id="faqlist">
+      
+                    <div class="accordion-item">
+                      <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                          <i class="bi bi-check-circle question-icon"></i>
+                          Website development
+                        </button>
+                      </h3>
+                      <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                        <div class="accordion-body">
+                          We build custom website for corporates, startups and small enterprises to grow their business online. We have a team of professional Web Developers and Web Designer. 
+                        </div>
+                      </div>
+                    </div><!-- # Faq item-->
+      
+                    <div class="accordion-item">
+                      <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                          <i class="bi bi-check-circle question-icon"></i>
+                          App development
+                        </button>
+                      </h3>
+                      <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                        <div class="accordion-body">
+                          We build mobile application for IOS, Android and Hybrid. We offer a full cycle of application design, integration and management services at reasonable price. 
+                        </div>
+                      </div>
+                    </div><!-- # Faq item-->
+      
+                    <div class="accordion-item">
+                      <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                          <i class="bi bi-check-circle question-icon"></i>
+                          Digital marketing
+                        </button>
+                      </h3>
+                      <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                        <div class="accordion-body">
+                          Digital Marketing plays an important role to grow your business. It is one of the most important tools for marketing in the present day. 
+We offer a complete range of Digital Marketing service under one roof. 
+
+                        </div>
+                      </div>
+                    </div><!-- # Faq item-->
+      
+                    <div class="accordion-item">
+                      <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                          <i class="bi bi-check-circle question-icon"></i>
+                          Social Media Marketing
+                        </button>
+                      </h3>
+                      <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                        <div class="accordion-body">
+                          Social Media Marketing is the use of social media platforms to promote your products and services. It helps you to reach targeted audiences at target locations. 
+                        </div>
+                      </div>
+                    </div><!-- # Faq item-->
+      
+      
+                  </div>
+      
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section><!--TRU End Service Details Section -->
+
+
+ <!-- =======PAC Service Details Section ======= -->
+ <section id="PAC" class="service-details">
+  <div class="container" data-aos="fade-up">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4">
+        <div class="services-list">
+          <a href="#STO">Business Startup Services:</a>
+          <a href="#LOG">GST and Income Tax :</a>
+          <a href="#CAR">Registration and License.</a>
+          <a href="#TRU">IT Services</a>
+          <a href="#PAC" class="active">Designing</a>
+          <a href="#WAR"> IPR Service :</a>
+        </div>
+        <h4>Designing  :</h4>
+        <p></p>
+
+
+        
+      </div>
+
+      <div class="col-lg-8">
+        
+
+        <ul>
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <div id="sev" class="sev">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>Designing</span>
+          <h2>Designing</h2>
+
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-10">
+
+            <div class="accordion accordion-flush" id="faqlist">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <i class="bi bi-check-circle question-icon"></i>
+                    Logo Design
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    A logo is a symbol or design used to identify a company or organisation as well as product or service. 
+We design an amazing logo for your brands at a very reasonable price. 
+
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <i class="bi bi-check-circle question-icon"></i>
+                    Digital Visiting Cards
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    A Digital Visiting Card is a virtual version of a paper visiting card also known as Digital Business Card or e-Card. 
+We make a very effective, custom, hassle free card at a very reasonable price. 
+
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+        </ul>
+      </div>
+
+    </div>
+
+    </div>
+
+  </div>
+</section><!--PAC End Service Details Section -->
+
+ <!-- =======WAR Service Details Section ======= -->
+ <section id="WAR" class="service-details">
+  <div class="container" data-aos="fade-up">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4">
+        <div class="services-list">
+          <a href="#STO">Business Startup Services:</a>
+          <a href="#LOG">GST and Income Tax :</a>
+          <a href="#CAR">Registration and License.</a>
+          <a href="#TRU">IT Services</a>
+          <a href="#PAC">Designing</a>
+          <a href="#WAR" class="active"> IPR Service :</a>
+        </div>
+
+        <h4> IPR Service :</h4>
+        <p></p>
+      </div>
+
+      <div class="col-lg-8">
+
+        <ul>
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <div id="sev" class="sev">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>GST and Income Tax</span>
+          <h2>GST and Income Tax</h2>
+
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-10">
+
+            <div class="accordion accordion-flush" id="faqlist">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <i class="bi bi-check-circle question-icon"></i>
+                    Trademark
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Protect your brand identity and customer trust, a trademark is a unique identity that make your company product and service unique from the rest. A registered trademark is your business’s intellectual property/ intangible asset which protects the investment made into creating trust and loyalty among your customers.
+Tradem ark Registration
+Trademark Application
+Trademark Search 
+Trademark Renewal 
+
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <i class="bi bi-check-circle question-icon"></i>
+                    Patent
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    A Patent is a statutory right for an invention granted for a limited time period of time by the competent authority to the Patentee. 
+●	Patent Search 
+●	Provisional Patent 
+●	Permanent Patent 
+
+
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    <i class="bi bi-check-circle question-icon"></i>
+                    Copyright
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    A copyright registration grants a set of right to any form of artistic creation or intellectual property. Registration of Copyright is important to protect the work from unauthorised use or copying. 
+We have team of professionals with sheer expertise for filing application of copyright registration. 
+
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </ul>
+      </div>
+
+    </div>
+
+    </div>
+
+  </div>
+</section><!--WAR End Service Details Section -->
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="" class="logo d-flex align-items-center">
+            <span>Yours Paralegal</span>
+          </a>
+          <p>Yours paralegal is India's fastest growing "Legal Service Provider Company" attempting to provide best legal solutions and deliver services to your doorstep. 
+            We provide all the services under one roof to help you to register & manage your business anywhere in India with legal compliance.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.facebook.com/yours.paralegal/" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/yours.paralegal?igshid=YmMyMTA2M2Y=" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/yours-paralegal-services/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/quote">Apply Now</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="/serviced#STO">Business Startup Service</a></li>
+            <li><a href="/serviced#LOG">GST and Income Tax</a></li>
+            <li><a href="/serviced#CAR">Registration and License</a></li>
+            <li><a href="/serviced#TRU">IT Services</a></li>
+            <li><a href="/serviced#PAC">Designing</a></li>
+            <li><a href="/serviced#WAR">IPR Service</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            Yours Paralegal <br>
+            Office no 03, YPS , Bhiwandi, Thane- 421302<br>
+            Maharashtra , India <br><br>
+            <strong>Phone:</strong> +91 8369725134<br>
+            <strong>Email:</strong> yours.paralegal@gmail.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Yours Paralegal</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
+        Designed by <a href="https://yoursparalegal.com/">Yorsparalegal</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
